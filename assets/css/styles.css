@@ -514,4 +514,8 @@ section#contact .section-heading {
     height: auto;
     padding: 2rem;
   }
+
+  .page-section h3.section-subheading {
+    font-size: 0.6rem;
+  }
 }
