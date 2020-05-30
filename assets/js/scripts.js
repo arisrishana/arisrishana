@@ -19,7 +19,7 @@ $('.back-to-top').click(function(){
 });
 
 $('.go-to-contact').click(function(){
-  $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
+  $('#contact').animate({scrollTop : 0},1500, 'easeInOutExpo');
   return false;
 });
 
