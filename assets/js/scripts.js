@@ -17,9 +17,14 @@ $('.back-to-top').click(function(){
 $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
 return false;
 });
-    
+
 $(document).ready(()=>{
     new WOW().init();
+
+    $('#go-to-contact').click(function(){
+       $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
+       return false;
+    });
 
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
         if (
