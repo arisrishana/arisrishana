@@ -14,17 +14,18 @@ if ($(this).scrollTop() > 100) {
 }
 });
 $('.back-to-top').click(function(){
-$('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
-return false;
+  $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
+  return false;
 });
+
+$('.go-to-contact').click(function(){
+  $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
+  return false;
+});
+
 
 $(document).ready(()=>{
     new WOW().init();
-
-    $('#go-to-contact').click(function(){
-       $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
-       return false;
-    });
 
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
         if (
