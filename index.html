@@ -270,8 +270,10 @@
                 state = 'year';
             }
 
-
-            document.getElementByClassName("year").innerHTML = now - start + " " + state;
+            let x = document.querySelectorAll(".year");
+            for(i = 0; i < x.length; i++){
+                x[i].innerHTML = now - start + " " + state;
+            }
         </script>
 
 
