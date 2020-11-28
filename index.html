@@ -157,7 +157,7 @@
                         <div class="box">
                           <img class="mx-auto rounded-circle hire-img" src="assets/img/Me.png" alt="Me">
                           <h4 class="title"><a href="javascript:void(0)">Creative & Innovative</a></h4>
-                          <p class="description">I've been working as freelancer for over 3 years, and I've worked on many projects from many clients and all I heard is positive reviews.</p>
+                          <p class="description">I've been working as freelancer for over <span class="year"></span>, and I've worked on many projects from many clients and all I heard is positive reviews.</p>
                         </div>
                       </div>
                     </div>
@@ -271,7 +271,7 @@
             }
 
 
-            document.getElementByClass("year").innerHTML = now - start + " " + state;
+            document.getElementByClassName("year").innerHTML = now - start + " " + state;
         </script>
 
 
