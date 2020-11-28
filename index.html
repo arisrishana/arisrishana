@@ -76,7 +76,7 @@
                 <div class="row ">
                     <div class="col-lg-6">
                         <h2 class="section-heading my-6">Working With Passion And Make Your Dream Come True.</h2>
-                        <p>I'm from Indonesia and I've been working as freelancer for over 3 years and still love to do it every day. I've worked on many projects from many clients and all I heard is positive reviews.</p>
+                        <p>I'm from Indonesia and I've been working as freelancer for over <span id="year"></span> and still love to do it every day. I've worked on many projects from many clients and all I heard is positive reviews.</p>
                         <p>I'm student of college who focuses on the study of <b>Informatics Engineering</b> and I also interested and exploring design especially in Logo and UI/UX Design. So I can work both on the design and development of a project.</p>
                     </div>
 
@@ -85,7 +85,7 @@
                         <p>Let's talk with me</p>
                         <div class="talk">
                             <h3 class="section-heading">
-                                <a href="javascript:void(0)">arisrishana@gmail.com</a>
+                                <a href="javascript:void(0)">arisrishana5@gmail.com</a>
                             </h3>
                         </div>
                     </div>
@@ -241,23 +241,39 @@
                         <img class="mx-auto rounded-circle team-member-img" src="assets/img/Me.png" alt="Me">
                         <h4>Aris Rishana</h4>
                         <p class="text-muted">Code & Design Enthusiast</p>
-                        <a class="btn btn-light btn-social mx-2" href="https://instagram.com/arisrishana_id" target="_blank"><i class="fab fa-instagram"></i></a>
                         <a class="btn btn-light btn-social mx-2" href="https://facebook.com/arisrishana" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-light btn-social mx-2" href="https://twitter.com/arisrishana_id" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-light btn-social mx-2" href="https://instagram.com/arisrishana_id" target="_blank"><i class="fab fa-instagram"></i></a>
                         <a class="btn btn-light btn-social mx-2" href="https://linkedin.com/mwlite/in/aris-rishana-1187751a4" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                         <a class="btn btn-light btn-social mx-2" href="https://github.com/arisrishana" target="_blank"><i class="fab fa-github"></i></a>
-                        <a class="btn btn-light btn-social mx-2" href="https://99designs.com/profiles/3618007" target="_blank"><img class="img-thumbnail rounded-circle" src="assets/img/logo/99d.png"></a>
                     </div>
-                    <h3 class="section-heading">arisrishana@gmail.com</h3>
+                    <h3 class="section-heading">arisrishana5@gmail.com</h3>
                 </div>
             </div>
         </section>
         <!-- Footer-->
         <footer class="footer py-4">
-            Copyright © Aris Rishana
-            <script>let date = new Date();document.write(date.getFullYear());</script>
+            Copyright © Aris Rishana 2020
         </footer>
 
         <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <script>
+            let start = 2017,
+                now = new Date().getFullYear(),
+                count = now - start;
+                state = '';
+            if(count > 1){
+                state = 'years';
+            }
+            else{
+                state = 'year';
+            }
+
+
+            document.getElementById("year").innerHTML = now - start + " " + state;
+        </script>
+
 
         <!-- Bootstrap core JS-->
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
