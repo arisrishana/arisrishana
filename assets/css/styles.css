@@ -1,5 +1,5 @@
 *{
-  font-family: "Montserrat";
+  font-family: "Poppins";
   /*1rem/em = 16px*/
 }
 
@@ -9,6 +9,7 @@ body, html{
 
 body {
   overflow-x: hidden;
+  background: #0E0F14;
 }
 
 p {
@@ -17,7 +18,7 @@ p {
 
 /*--- Preloader ---*/
 .preloader{
-  background-color:#f7f7f7;
+  background-color: #0E0F14;
   width:100%;
   height:100%;
   position:fixed;
@@ -38,7 +39,7 @@ p {
   position:relative;
   border-style:solid;
   border-width:3px;
-  border-top-color:#cae50c;
+  border-top-color:#0988FC;
   border-bottom-color:transparent;
   border-left-color:transparent;
   border-right-color:transparent;
@@ -46,7 +47,7 @@ p {
   border-radius:50%;
   -webkit-box-shadow:0 1px 5px 0 rgba(35,181,185,0.15);
   box-shadow:0 1px 5px 0 rgba(35,181,185,0.15);
-  background-color:#001c28;
+  background-color:#0E0F14;
   -webkit-animation:zoom 2000ms infinite ease;
   animation:zoom 2000ms infinite ease;
   -webkit-transition:.5s;
@@ -122,6 +123,7 @@ p {
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 1rem;
+  color: #FFFFFF;
 }
 .page-section h3.section-subheading {
   font-size: 1rem;
@@ -130,12 +132,12 @@ p {
 }
 
 ::-moz-selection {
-  background: #cae50c;
+  background: #0988FC;
   text-shadow: none;
 }
 
 ::selection {
-  background: #cae50c;
+  background: #0988FC;
   text-shadow: none;
 }
 
@@ -155,13 +157,13 @@ img::-moz-selection {
   padding: 1.25rem 2.5rem;
   font-size: 1.125rem;
   font-weight: 700;
-  border: 3px solid #cae50c;
+  border: 3px solid #0988FC;
   color: #fff;
 }
 
 .btn-custom:hover {
   color: #fff;
-  background: #cae50c;
+  background: #0988FC;
 }
 
 .btn-social {
@@ -174,13 +176,17 @@ img::-moz-selection {
   border-radius: 100%;
 }
 
+.btn-social:hover{
+  border: 0.2rem solid #0988FC;
+}
+
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #001c28;
+  background-color: #0E0F14;
 }
 #mainNav .navbar-brand {
-  color: #cae50c;
+  color: #0988FC;
   font-weight: 700;
   letter-spacing: 0.0625em;
   text-transform: uppercase;
@@ -194,7 +200,7 @@ img::-moz-selection {
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #cae50c;
+  color: #0988FC;
 }
 
 header.hero {
@@ -218,16 +224,20 @@ header.hero .hero-subheading {
   margin-bottom: 25px;
 }
 header.hero .hero-heading {
-  font-size: 4.5rem;
+  font-size: 4.2rem;
   font-weight: 700;
-  line-height: 4.5rem;
+  line-height: 4.2rem;
   margin-bottom: 3rem;
 }
 
 /*--- About ---*/
+#about {
+  color: #FFFFFF;
+}
+
 #about .talk a {
   font-size: 2rem;
-  color: #001c28;
+  color: #FFFFFF;
 }
 
 /*--- Box ---*/
@@ -237,15 +247,17 @@ header.hero .hero-heading {
   padding: 3rem 2rem;
   position: relative;
   overflow: hidden;
-  background: #fff;
-  box-shadow: 0 10px 30px 0 rgba(0, 28, 40, 0.1);
+  background: #121318;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease-in-out;
   text-align: center;
+  border-radius: 10px;
 }
 
 #services .box:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  border: 0.3rem solid #0988FC;
 }
 
 #services .icon {
@@ -256,13 +268,13 @@ header.hero .hero-heading {
   border-radius: 50%;
   width: 6rem;
   height: 6rem;
-  background: #cae50c;
+  background: #0988FC;
 }
 
 #services .icon i {
   font-size: 3rem;
   line-height: 1.5;
-  color: #001c28;
+  color: #0E0F14;
 }
 
 #services .title {
@@ -272,7 +284,7 @@ header.hero .hero-heading {
 }
 
 #services .title a {
-  color: #001c28;
+  color: #FFFFFF;
 }
 
 #services .description {
@@ -280,6 +292,7 @@ header.hero .hero-heading {
   line-height: 1.75rem;
   margin-bottom: 0;
   text-align: center;
+  color: #AAAAAA;
 }
 
 /*--- Hire ---*/
@@ -289,21 +302,24 @@ header.hero .hero-heading {
   padding: 3rem 2rem;
   position: relative;
   overflow: hidden;
-  background: #fff;
+  background: #121318;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease-in-out;
   text-align: center;
+  border-radius: 10px;
 }
 
 #hire .box:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  border: 0.3rem solid #0988FC;
 }
 
 #hire .hire-img{
   width: 12rem;
   height: 12rem;
   margin-bottom: 1rem;
-  border: 0.5rem solid #f7f7f7;
+  border: 0.3rem solid #0988FC;
 }
 
 #hire .title {
@@ -313,7 +329,7 @@ header.hero .hero-heading {
 }
 
 #hire .title a {
-  color: #001c28;
+  color: #FFFFFF;
 }
 
 #hire .description {
@@ -321,6 +337,7 @@ header.hero .hero-heading {
   line-height: 1.75rem;
   margin-bottom: 0;
   text-align: center;
+  color: #AAAAAA;
 }
 
 /*--- Portfolio ---*/
@@ -328,7 +345,7 @@ header.hero .hero-heading {
   max-width: 25rem;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0 10px 30px 0 rgba(0, 28, 40, 0.1);
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.15);
 }
 #portfolio .portfolio-item .portfolio-caption {
   padding: 1.5rem;
@@ -351,7 +368,7 @@ header.hero .hero-heading {
 .team-member .team-member-img{
   width: 14rem;
   height: 14rem;
-  border: 0.5rem solid rgba(255, 255, 255, 0.1);
+  border: 0.3rem solid #0988FC;
 }
 
 .team-member h4 {
@@ -361,7 +378,7 @@ header.hero .hero-heading {
 }
 
 section#contact {
-  background-color: #001c28;
+  background-color: #0E0F14;
 }
 section#contact .section-heading {
   color: #fff;
@@ -370,7 +387,7 @@ section#contact .section-heading {
 }
 
 .footer {
-  background: #001c28;
+  background: #0E0F14;
   color: #fff;
   text-align: center;
   font-size: 0.9rem;
@@ -380,8 +397,8 @@ section#contact .section-heading {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #cae50c;
-  color: #001c28;
+  background: #0988FC;
+  color: #FFFFFF;
   width: 3rem;
   height: 3rem;
   text-align: center;
@@ -396,9 +413,14 @@ section#contact .section-heading {
 
 .back-to-top i {
   padding-top: 0.75rem;
-  color: #001c28;
+  color: #FFFFFF;
 }
 
+.hr{
+  background: #333333;
+  width: 90%;
+  margin: 0 auto;
+}
 
 @media (min-width: 992px) {
   #mainNav {
@@ -419,7 +441,8 @@ section#contact .section-heading {
   #mainNav.navbar-shrink {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #001c28;
+    background-color: #0E0F14;
+    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.4);
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -451,7 +474,7 @@ section#contact .section-heading {
     padding: 1rem 2rem;
     font-size: 0.75rem;
     font-weight: 700;
-    border: 3px solid #cae50c;
+    border: 3px solid #0988FC;
     color: #fff;
   }
 
