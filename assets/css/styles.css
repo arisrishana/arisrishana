@@ -260,6 +260,11 @@ header.hero .hero-heading {
   border: 0.3rem solid #0988FC;
 }
 
+#services .box:hover .icon{
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
 #services .icon {
   margin: 0 auto 1rem auto;
   padding-top: 0.75rem;
@@ -269,6 +274,8 @@ header.hero .hero-heading {
   width: 6rem;
   height: 6rem;
   background: #0988FC;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 #services .icon i {
@@ -315,11 +322,18 @@ header.hero .hero-heading {
   border: 0.3rem solid #0988FC;
 }
 
+#hire .box:hover .hire-img{
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
 #hire .hire-img{
   width: 12rem;
   height: 12rem;
   margin-bottom: 1rem;
   border: 0.3rem solid #0988FC;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 #hire .title {
@@ -501,8 +515,8 @@ section#contact .section-heading {
     margin-bottom: 1.25rem;
   }
   header.hero .hero-heading {
-    font-size: 3.25rem;
-    line-height: 3.25rem;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
     margin-bottom: 2.75rem;
   }
 
