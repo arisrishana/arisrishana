@@ -1,535 +1,298 @@
-*{
-  font-family: "Poppins";
-  /*1rem/em = 16px*/
-}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-body, html{
-  height: 100%;
-}
+        <title>Aris Rishana</title>
+        
+        <link rel="icon" type="image/png" href="assets/img/logo/favicon.png">
+        
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
 
-body {
-  overflow-x: hidden;
-  background: #0E0F14;
-}
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet" type="text/css" />
 
-p {
-  line-height: 1.75;
-}
+        <!-- Third-Party CSS-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css" rel="stylesheet" crossorigin="anonymous">
+        <link href="assets/vendor/flaticon/font/flaticon.css" rel="stylesheet">
 
-/*--- Preloader ---*/
-.preloader{
-  background-color: #0E0F14;
-  width:100%;
-  height:100%;
-  position:fixed;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  z-index:999999;
-  -webkit-transition:.5s;
-  -o-transition:.5s;
-  transition:.5s;
-  margin:0 auto;
-}
+        <!-- Main CSS-->
+        <link href="assets/css/styles.css" rel="stylesheet">
 
-.preloader .preloader-circle{
-  width:100px;
-  height:100px;
-  position:relative;
-  border-style:solid;
-  border-width:3px;
-  border-top-color:#0988FC;
-  border-bottom-color:transparent;
-  border-left-color:transparent;
-  border-right-color:transparent;
-  z-index:10;
-  border-radius:50%;
-  -webkit-box-shadow:0 1px 5px 0 rgba(35,181,185,0.15);
-  box-shadow:0 1px 5px 0 rgba(35,181,185,0.15);
-  background-color:#0E0F14;
-  -webkit-animation:zoom 2000ms infinite ease;
-  animation:zoom 2000ms infinite ease;
-  -webkit-transition:.5s;
-  -o-transition:.5s;
-  transition:.5s;
-}
+    </head>
 
-.preloader .preloader-img{
-  position:absolute;
-  top:50%;
-  z-index:200;
-  left:0;
-  right:0;
-  margin:0 auto;
-  text-align:center;
-  display:inline-block;
-  -webkit-transform:translateY(-50%);
-  -ms-transform:translateY(-50%);
-  transform:translateY(-50%);
-  padding-top:6px;
-  -webkit-transition:.5s;
-  -o-transition:.5s;
-  transition:.5s;
-}
+    <body id="page-top">
+        <!-- Preloader -->
+        <div id="preloader-active">
+            <div class="preloader d-flex align-items-center justify-content-center">
+                <div class="preloader-inner position-relative">
+                    <div class="preloader-circle"></div>
+                    <div class="preloader-img pere-text">
+                        <img src="assets/img/logo/logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
 
-.preloader .preloader-img img{
-  max-width:2.5rem;
-}
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logo/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto" style="width: 275px;">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact Me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 hero-caption">
+                        <div class="hero-subheading wow fadeInUp">Hi! I'm Aris Rishana</div>
+                        <div class="hero-heading wow fadeInUp">Freelancers who make a clean products</div>
+                        <a class="btn btn-custom wow fadeInLeft js-scroll-trigger" href="#about">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="hr"><hr class="m-0"></div>
+
+        <!-- About -->
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-6">
+                        <h2 class="section-heading my-6">Working With Passion And Make Your Dream Come True.</h2>
+                        <span class="text-muted">
+                            <p>I'm from Indonesia and I've been working as freelancer for over <span class="year"></span> and still love to do it every day. I've worked on many projects from many clients and all I heard is positive reviews.</p>
+                            <p>I'm student of college who focuses on the study of <b>Informatics Engineering</b> and I also interested and exploring design especially in Logo and UI/UX Design. So I can work both on the design and development of a project.</p>
+                        </span>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <h2 class="section-heading">Any Type Of Questions To Discuss.</h2>
+                        <span class="text-muted">
+                            <p>Let's talk with me</p>
+                        </span>
+                        <div class="talk">
+                            <h3 class="section-heading">
+                                <a href="javascript:void(0)">arisrishana5@gmail.com</a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="hr"><hr class="m-0"></div>
+        
+        <!-- Services -->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Services</h2>
+                    <h3 class="section-subheading text-muted">The Services That I Can Do</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                        <div class="box">
+                          <div class="icon"><i class="flaticon-vector"></i></div>
+                          <h4 class="title"><a href="javascript:void(0)">Logo Design</a></h4>
+                          <p class="description">I will make a clean, elegant and memorable logo design for your company to attract your clients' attention.</p>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+                        <div class="box">
+                          <div class="icon"><i class="flaticon-image"></i></div>
+                          <h4 class="title"><a href="javascript:void(0)">UI/UX Design</a></h4>
+                          <p class="description">I will make a clean, elegant and memorable UI/UX design for your company that make your clients comfortable with your website or apps.</p>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+                        <div class="box">
+                          <div class="icon"><i class="flaticon-code"></i></div>
+                          <h4 class="title"><a href="javascript:void(0)">Front-End Developer</a></h4>
+                          <p class="description">I have various skills in Front-End Development like PHP, HTML, CSS, JS, CodeIgniter Framework, Bootsrap, Tailwind CSS, JQuery, etc.</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="hr"><hr class="m-0"></div>
+
+        <!-- Services -->
+        <section class="page-section" id="hire">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Hired Me</h2>
+                    <h3 class="section-subheading text-muted">The Reason Why You Hired Me</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                        <div class="box">
+                          <img class="mx-auto rounded-circle hire-img" src="assets/img/Me.png" alt="Me">
+                          <h4 class="title"><a href="javascript:void(0)">Communicative</a></h4>
+                          <p class="description">I can communicate my ideas well, and I communicate what I struggle to make all clear.</p>
+                        </div>
+                      </div>
+                      
+                      <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+                        <div class="box">
+                          <img class="mx-auto rounded-circle hire-img" src="assets/img/Me.png" alt="Me">
+                          <h4 class="title"><a href="javascript:void(0)">Collaborative</a></h4>
+                          <p class="description">I can work within a team, collaborative well with designers and developers, and I really love the feedbacks.</p>
+                        </div>
+                      </div>
+                      
+                      <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+                        <div class="box">
+                          <img class="mx-auto rounded-circle hire-img" src="assets/img/Me.png" alt="Me">
+                          <h4 class="title"><a href="javascript:void(0)">Creative & Innovative</a></h4>
+                          <p class="description">I've been working as freelancer for over <span class="year"></span>, and I've worked on many projects from many clients and all I heard is positive reviews.</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="hr"><hr class="m-0"></div>
+
+        <!-- Portfolio Grid -->
+        <section class="page-section" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Portfolio</h2>
+                    <h3 class="section-subheading text-muted">Several Projects That I Have Done</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="">
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Abundant 180</div>
+                                <div class="portfolio-caption-subheading text-muted">Logo Design</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <img class="img-fluid" src="assets/img/portfolio/2.jpg" alt="">
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Initiative Fur Senioren</div>
+                                <div class="portfolio-caption-subheading text-muted">Label & Logo Design</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <img class="img-fluid" src="assets/img/portfolio/3.jpg" alt="">
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Digilove</div>
+                                <div class="portfolio-caption-subheading text-muted">Logo Design</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <div class="portfolio-item">
+                            <img class="img-fluid" src="assets/img/portfolio/4.jpg" alt="">
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Allure Auto Spa</div>
+                                <div class="portfolio-caption-subheading text-muted">Logo Design</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <div class="portfolio-item">
+                            <img class="img-fluid" src="assets/img/portfolio/5.jpg" alt="">
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Eskimo</div>
+                                <div class="portfolio-caption-subheading text-muted">Logo Design</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="portfolio-item">
+                            <img class="img-fluid" src="assets/img/portfolio/6.jpg" alt="">
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Unit Robotika</div>
+                                <div class="portfolio-caption-subheading text-muted">Website</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="hr"><hr class="m-0"></div>
+
+        <!-- Contact -->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Get In Touch</h2>
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle team-member-img" src="assets/img/Me.png" alt="Me">
+                        <h4>Aris Rishana</h4>
+                        <p class="text-muted">Code & Design Enthusiast</p>
+                        <a class="btn btn-light btn-social mx-2" href="https://facebook.com/arisrishana" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-light btn-social mx-2" href="https://twitter.com/arisrishana_id" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-light btn-social mx-2" href="https://instagram.com/arisrishana_id" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-light btn-social mx-2" href="https://linkedin.com/mwlite/in/aris-rishana-1187751a4" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-light btn-social mx-2" href="https://github.com/arisrishana" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                    <h3 class="section-heading">arisrishana5@gmail.com</h3>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            Copyright © Aris Rishana <script>document.write(new Date().getFullYear())</script>
+        </footer>
+
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <script>
+            let start = 2017,
+                now = new Date().getFullYear(),
+                count = now - start;
+                state = '';
+            if(count > 1){
+                state = 'years';
+            }
+            else{
+                state = 'year';
+            }
+
+            let x = document.querySelectorAll(".year");
+            for(i = 0; i < x.length; i++){
+                x[i].innerHTML = now - start + " " + state;
+            }
+        </script>
 
 
-@-webkit-keyframes zoom{
-  0%{
-    -webkit-transform:rotate(0deg);
-    transform:rotate(0deg);
-    -webkit-transition:.5s;
-    -o-transition:.5s;
-    transition:.5s;
-  }
-
-  100%{
-    -webkit-transform:rotate(360deg);
-    transform:rotate(360deg);
-    -webkit-transition:.5s;
-    -o-transition:.5s;
-    transition:.5s;
-  }
-}
-
-@keyframes zoom{
-  0%{
-    -webkit-transform:rotate(0deg);
-    transform:rotate(0deg);
-    -webkit-transition:.5s;
-    -o-transition:.5s;
-    transition:.5s;
-  }
-
-  100%{
-    -webkit-transform:rotate(360deg);
-    transform:rotate(360deg);
-    -webkit-transition:.5s;
-    -o-transition:.5s;
-    transition:.5s;
-  }
-}
-
-/*--- Page Section ---*/
-.page-section {
-  padding: 5rem 0;
-}
-.page-section h2.section-heading {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  color: #FFFFFF;
-}
-.page-section h3.section-subheading {
-  font-size: 1rem;
-  font-weight: 400;
-  margin-bottom: 4rem;
-}
-
-::-moz-selection {
-  background: #0988FC;
-  text-shadow: none;
-}
-
-::selection {
-  background: #0988FC;
-  text-shadow: none;
-}
-
-img::-moz-selection {
-  background: transparent;
-}
-
-img::selection {
-  background: transparent;
-}
-
-img::-moz-selection {
-  background: transparent;
-}
-
-.btn-custom {
-  padding: 1.25rem 2.5rem;
-  font-size: 1.125rem;
-  font-weight: 700;
-  border: 3px solid #0988FC;
-  color: #fff;
-}
-
-.btn-custom:hover {
-  color: #fff;
-  background: #0988FC;
-}
-
-.btn-social {
-  height: 2.5rem;
-  width: 2.5rem;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  border-radius: 100%;
-}
-
-.btn-social:hover{
-  border: 0.2rem solid #0988FC;
-}
-
-#mainNav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-color: #0E0F14;
-}
-#mainNav .navbar-brand {
-  color: #0988FC;
-  font-weight: 700;
-  letter-spacing: 0.0625em;
-  text-transform: uppercase;
-}
-#mainNav .navbar-brand img {
-  height: 1.5rem;
-}
-#mainNav .navbar-nav .nav-item .nav-link {
-  font-size: 0.95rem;
-  color: #fff;
-  letter-spacing: 0.0625em;
-}
-#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #0988FC;
-}
-
-header.hero {
-  height: 100%;
-  padding-top: 17rem;
-  padding-bottom: 6rem;
-  color: #fff;
-  background-image: url("../img/header-bg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
-}
-header.hero .hero-caption{
-  position: relative;
-  top: -5rem;
-}
-header.hero .hero-subheading {
-  font-size: 1.5rem;
-  line-height: 1.5rem;
-  margin-bottom: 25px;
-}
-header.hero .hero-heading {
-  font-size: 3.75rem;
-  font-weight: 600;
-  line-height: 3.75rem;
-  margin-bottom: 3rem;
-}
-
-/*--- About ---*/
-#about {
-  color: #FFFFFF;
-}
-
-#about .talk a {
-  font-size: 2rem;
-  color: #FFFFFF;
-}
-
-/*--- Box ---*/
-#services .box {
-  height: 27rem;
-  margin: 0 10px 40px 10px;
-  padding: 3rem 2rem;
-  position: relative;
-  overflow: hidden;
-  background: #121318;
-  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease-in-out;
-  text-align: center;
-  border-radius: 10px;
-}
-
-#services .box:hover {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-  border: 0.3rem solid #0988FC;
-}
-
-#services .box:hover .icon{
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
-}
-
-#services .icon {
-  margin: 0 auto 1rem auto;
-  padding-top: 0.75rem;
-  display: inline-block;
-  text-align: center;
-  border-radius: 50%;
-  width: 6rem;
-  height: 6rem;
-  background: #0988FC;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
-
-#services .icon i {
-  font-size: 3rem;
-  line-height: 1.5;
-  color: #0E0F14;
-}
-
-#services .title {
-  font-weight: 700;
-  margin: 1rem 0;
-  font-size: 1.5rem;
-}
-
-#services .title a {
-  color: #FFFFFF;
-}
-
-#services .description {
-  font-size: 1rem;
-  line-height: 1.75rem;
-  margin-bottom: 0;
-  text-align: center;
-  color: #AAAAAA;
-}
-
-/*--- Hire ---*/
-#hire .box {
-  height: 33rem;
-  margin: 0 10px 40px 10px;
-  padding: 3rem 2rem;
-  position: relative;
-  overflow: hidden;
-  background: #121318;
-  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease-in-out;
-  text-align: center;
-  border-radius: 10px;
-}
-
-#hire .box:hover {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-  border: 0.3rem solid #0988FC;
-}
-
-#hire .box:hover .hire-img{
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
-}
-
-#hire .hire-img{
-  width: 12rem;
-  height: 12rem;
-  margin-bottom: 1rem;
-  border: 0.3rem solid #0988FC;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
-
-#hire .title {
-  font-weight: 700;
-  margin: 1rem 0;
-  font-size: 1.5rem;
-}
-
-#hire .title a {
-  color: #FFFFFF;
-}
-
-#hire .description {
-  font-size: 1rem;
-  line-height: 1.75rem;
-  margin-bottom: 0;
-  text-align: center;
-  color: #AAAAAA;
-}
-
-/*--- Portfolio ---*/
-#portfolio .portfolio-item {
-  max-width: 25rem;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.15);
-}
-#portfolio .portfolio-item .portfolio-caption {
-  padding: 1.5rem;
-  text-align: center;
-  background-color: #fff;
-}
-#portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 0;
-}
-#portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
-  font-style: italic;
-}
-
-.team-member {
-  margin-bottom: 3rem;
-  text-align: center;
-}
-.team-member .team-member-img{
-  width: 14rem;
-  height: 14rem;
-  border: 0.3rem solid #0988FC;
-}
-
-.team-member h4 {
-  margin-top: 1.5rem;
-  margin-bottom: 0;
-  color: #fff;
-}
-
-section#contact {
-  background-color: #0E0F14;
-}
-section#contact .section-heading {
-  color: #fff;
-  font-weight: 700;
-  margin-bottom: 3rem;
-}
-
-.footer {
-  background: #0E0F14;
-  color: #fff;
-  text-align: center;
-  font-size: 0.9rem;
-}
-
-/*--- Back to top button ---*/
-.back-to-top {
-  position: fixed;
-  display: none;
-  background: #0988FC;
-  color: #FFFFFF;
-  width: 3rem;
-  height: 3rem;
-  text-align: center;
-  line-height: 3;
-  font-size: 1rem;
-  border-radius: 50%;
-  right: 1rem;
-  bottom: 1rem;
-  transition: background 0.5s;
-  z-index: 11;
-}
-
-.back-to-top i {
-  padding-top: 0.75rem;
-  color: #FFFFFF;
-}
-
-.hr{
-  background: #333333;
-  width: 90%;
-  margin: 0 auto;
-}
-
-@media (min-width: 992px) {
-  #mainNav {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    border: none;
-    background-color: transparent;
-    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
-  }
-  #mainNav .navbar-brand {
-    font-size: 1.5em;
-    transition: font-size 0.3s ease-in-out;
-  }
-  #mainNav .navbar-brand img {
-    height: 2rem;
-    transition: height 0.3s ease-in-out;
-  }
-  #mainNav.navbar-shrink {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background-color: #0E0F14;
-    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.4);
-  }
-  #mainNav.navbar-shrink .navbar-brand {
-    font-size: 1.25em;
-  }
-  #mainNav.navbar-shrink .navbar-brand svg,
-#mainNav.navbar-shrink .navbar-brand img {
-    height: 1.5rem;
-  }
-  #mainNav .navbar-nav .nav-item {
-    margin-right: 1rem;
-  }
-  #mainNav .navbar-nav .nav-item:last-child {
-    margin-right: 0;
-  }
-}
-
-@media(max-width: 768px){
-  header.hero .hero-subheading {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-  }
-  header.hero .hero-heading {
-    font-size: 4rem;
-    line-height: 4rem;
-    margin-bottom: 3rem;
-  }
-  
-  btn-custom {
-    padding: 1rem 2rem;
-    font-size: 0.75rem;
-    font-weight: 700;
-    border: 3px solid #0988FC;
-    color: #fff;
-  }
-
-  #about .talk a {
-    font-size: 2rem;
-  }
-
-  .page-section h2.section-heading {
-    font-size: 1.75rem;
-  }
-  .page-section h3.section-subheading {
-    font-size: 0.75rem;
-  }
-}
-
-@media(max-width: 576px){
-  header.hero {
-    text-align: center;
-    background-position: left;
-  }
-  header.hero .hero-subheading {
-    font-size: 1.25rem;
-    line-height: 1.25rem;
-    margin-bottom: 1.25rem;
-  }
-  header.hero .hero-heading {
-    font-size: 2.75rem;
-    line-height: 2.75rem;
-    margin-bottom: 2.75rem;
-  }
-
-  #about .talk a {
-    font-size: 1.5rem;
-  }
-
-  #hire .box {
-    height: auto;
-    padding: 2rem;
-  }
-
-  .page-section h3.section-heading {
-    font-size: 1.5rem;
-  }
-}
+        <!-- Bootstrap core JS-->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+        
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" crossorigin="anonymous"></script>
+        
+        <!-- Core theme JS-->
+        <script src="assets/js/scripts.js"></script>
+    </body>
+</html>
